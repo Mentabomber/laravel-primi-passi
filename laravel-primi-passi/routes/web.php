@@ -12,6 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function () {
+
+    return view('faq');
+});
 
 Route::get('/', function () {
 
@@ -19,7 +23,13 @@ Route::get('/', function () {
         'name' => 'Giacomo'
     ];
 
-    return view('home', $names);
+    $files = [
+       'datas' => ['faq','infos','shop']
+    ];
+
+    return view('home', $names, $files);
 });
+
+
 
 

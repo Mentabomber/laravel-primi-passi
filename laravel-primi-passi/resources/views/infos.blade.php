@@ -10,15 +10,7 @@
 </head>
 
 <body>
-    <h1> Hello {{ $name }} !</h1>
-
-    <ul>
-        @foreach ($datas as $data)
-            <li> <a href="{{ $data }}"> {{ $data }}</a> </li>
-        @endforeach
-    </ul>
-
-
+    <h1> Hello {{ $name }}, this is the infos page!</h1>
 </body>
 
 </html>
