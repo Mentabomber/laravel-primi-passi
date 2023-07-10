@@ -12,22 +12,36 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
+Route::get('/faq', function () {
+    $data = [
+        'name' => 'Giacomo'
+    ];
+    return view('faq',$data);
+});
 
-    return view('faq');
+Route::get('/shop', function () {
+    $data = [
+        'name' => 'Giacomo'
+    ];
+    return view('shop',$data);
+});
+
+Route::get('/infos', function () {
+    $data = [
+        'name' => 'Giacomo'
+    ];
+    return view('infos',$data);
 });
 
 Route::get('/', function () {
 
-    $names = [
-        'name' => 'Giacomo'
+
+    $data = [
+        'name' => 'Giacomo',
+        'datas' => ['faq','infos','shop']
     ];
 
-    $files = [
-       'datas' => ['faq','infos','shop']
-    ];
-
-    return view('home', $names, $files);
+    return view('home', $data);
 });
 
 
