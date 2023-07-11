@@ -44,6 +44,14 @@ Route::get('/', function () {
     return view('home', $data);
 });
 
+// alternativa
+// Route::get('/faq', function () {
+//     $data = [
+//         'name' => 'Giacomo',
+//         'datas' => ['faq','infos','shop']
+//     ];
+//     return view('faq', $data);
+// })->name('faq');
 
 
 

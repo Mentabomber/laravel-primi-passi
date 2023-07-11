@@ -15,7 +15,11 @@
     <ul>
         @foreach ($datas as $data)
             <li> <a href="{{ $data }}"> {{ $data }}</a> </li>
+
+            {{-- alternativa
+            <a href="{{ route('home') }}">HOME</a> --}}
         @endforeach
+        <a href="{{ route('home') }}">HOME</a>
     </ul>
 
 

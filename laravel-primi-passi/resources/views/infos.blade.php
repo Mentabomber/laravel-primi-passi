@@ -11,6 +11,7 @@
 
 <body>
     <h1> Hello {{ $name }}, this is the infos page!</h1>
+
 </body>
 
 </html>
